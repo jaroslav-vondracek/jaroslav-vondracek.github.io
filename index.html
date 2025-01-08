@@ -1,139 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <!-- Ensures proper rendering and touch zooming on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>My Personal Website</title>
-
-    <!-- Bootstrap CSS (via CDN) -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-          integrity="sha384-f3XQejGt+TvnSXihS25gX+4023ZIszY+xI9uBP2B3qeq40hxmCF/YHoUHZ45G7Ca"
-          crossorigin="anonymous" />
-
-    <!-- You can add your own custom styles in a separate CSS file or here -->
-    <style>
-        /* Example custom styling */
-        .hero {
-            background: #f8f9fa;
-            padding: 4rem 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaroslav Vondráček</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">YourName</a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <!-- Navigation Bar
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">YourName</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1><span>Jaroslav Vondráček</span></h1>
+      <p>Studying Computer Graphics at FEE CTU, enjoying programming in Unity and riding a bike in the meantime.</p>
+    </div>
+  </section>
 
-    <!-- Hero / Introduction Section -->
-    <section class="hero d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="display-4">Hi, I'm [Your Name]</h1>
-                    <p class="lead">
-                        I'm a [role/position] passionate about creating awesome things.
-                    </p>
-                    <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <!-- Replace with your own image or an illustration -->
-                    <img src="https://via.placeholder.com/400x300"
-                         alt="Profile"
-                         class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jaroslav Vondráček. Všechna práva vyhrazena.</p>
+  </footer>
 
-    <!-- About Section -->
-    <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>
-            Briefly introduce yourself, highlight your background, skills, and interests.
-            You can also mention your current projects or professional goals.
-        </p>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container my-5">
-        <h2>Portfolio</h2>
-        <div class="row">
-            <!-- Example project cards -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 1" />
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 1</h5>
-                        <p class="card-text">Short project description goes here.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat for more projects -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name*</label>
-                <input type="text" class="form-control" id="name" required />
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email*</label>
-                <input type="email" class="form-control" id="email" required />
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message*</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-light">
-        <p class="mb-0">&copy; 2025 YourName. All rights reserved.</p>
-    </footer>
-
-    <!-- Your custom JavaScript file -->
-    <script src="main.js"></script>
-
-    <!-- Bootstrap JS (via CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-9ndCyUa4A+75cKuhg6L+2zz3lqkQf0KjNTKOd5c2SUr9GhATuLQaWD4z0ANBJ8gP"
-            crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 </html>
