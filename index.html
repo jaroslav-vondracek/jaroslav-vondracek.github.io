@@ -2,36 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jaroslav Vondráček</title>
+  <script src="https://kit.fontawesome.com/5f8acc445e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono">
 </head>
 <body>
-  <!-- Navigation Bar
-  <header class="navbar">
-    <div class="container">
-      <a href="#" class="logo">YourName</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header> -->
+  <header>
+      <button class="language-toggle" id="lang-toggle" data-current="cz">EN</button>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1><span>Jaroslav Vondráček</span></h1>
-      <p>Studying Computer Graphics at FEE CTU, enjoying programming in Unity and riding a bike in the meantime.</p>
+  <main>
+    <div class="content">
+      <h1 class="label">Jaroslav Vondráček</h1>
+      <!--<p class="lang" data-en="I build games, apps, and love riding my bike." data-cz="Vytvářím hry, aplikace a miluji jízdu na kole."></p>
+      
+      <div class="about">
+         <h3 class="lang" data-en="About Me" data-cz="O Mně"></h3> 
+        <p class="lang" data-en="I am "
+        data-cz="Rád programuju."></p>
+      </div>-->
     </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Jaroslav Vondráček. Všechna práva vyhrazena.</p>
+  <footer class="footer">
+    <div class="links">
+      <ul>
+        <li>
+          <a href="https://gitlab.com/jaroslav-vondracek" target="_blank" aria-label="GitLab">
+            <i class="fa-brands fa-gitlab"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jaroslav-vondracek" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jaroslav-vondracek" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.strava.com/athletes/4594704" target="_blank" aria-label="Strava">
+            <i class="fa-brands fa-strava"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>© 2025 Jaroslav Vondráček</p>
   </footer>
 
   <script src="main.js"></script>
